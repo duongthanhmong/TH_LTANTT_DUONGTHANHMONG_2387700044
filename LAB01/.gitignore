@@ -1,0 +1,8 @@
+
+__pycache__/
+*.py[cod]
+certs/
+*.key
+.env
+.venv/
+work/

@@ -1,0 +1,5 @@
+# Initial dependencies from the NetRecon exercise.
+# asyncio is part of Python; HTMX is a browser library.
+flask
+click
+python-dotenv
