@@ -15,7 +15,7 @@ Nạp lại các file đã thay đổi trên đĩa trong VS Code nếu tab đang
 Trong mỗi terminal, vào thư mục:
 
 ~~~powershell
-cd "C:\Users\LOQ\OneDrive\Desktop\BUOI 3\LAB01"
+cd "C:\Users\LOQ\OneDrive\Desktop\BUOI 3\BUOI3\LAB01"
 ~~~
 
 Terminal 1:

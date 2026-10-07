@@ -16,7 +16,7 @@ LAB01 tương ứng secure-chat; LAB02 tương ứng netrecon trong giáo trình
 - Các ảnh code ở giữa bài nên chụp nếu báo cáo yêu cầu trình bày mã; không thay thế ảnh chương trình chạy.
 
 Đường dẫn làm việc hiện tại:
-C:\Users\LOQ\OneDrive\Desktop\BUOI 3
+C:\Users\LOQ\OneDrive\Desktop\BUOI 3\BUOI3
 
 ## 2. LAB01 - ảnh kết quả thực hành
 
@@ -46,7 +46,7 @@ Nếu chụp ảnh code, hãy mở lại file trên đĩa tại LAB01 để hìn
 Trong terminal:
 
 ~~~powershell
-cd "C:\Users\LOQ\OneDrive\Desktop\BUOI 3\LAB01"
+cd "C:\Users\LOQ\OneDrive\Desktop\BUOI 3\BUOI3\LAB01"
 & "C:\Program Files\OpenSSL-Win64\bin\openssl.exe" version
 & "C:\Program Files\OpenSSL-Win64\bin\openssl.exe" verify -CAfile certs\ca\ca.crt -purpose sslserver certs\server\server.crt
 & "C:\Program Files\OpenSSL-Win64\bin\openssl.exe" verify -CAfile certs\ca\ca.crt -purpose sslclient certs\client\client.crt
@@ -59,7 +59,7 @@ Nếu cần ảnh quá trình tạo chứng chỉ ở trang 7 mà chưa lưu k�
 Không ghi đè bộ certs đang dùng của LAB01:
 
 ~~~powershell
-cd "C:\Users\LOQ\OneDrive\Desktop\BUOI 3\LAB01"
+cd "C:\Users\LOQ\OneDrive\Desktop\BUOI 3\BUOI3\LAB01"
 New-Item -ItemType Directory -Path .\work\cert-demo -Force
 Copy-Item .\openssl.cnf, .\make-certs.bat .\work\cert-demo\
 $env:Path += ";C:\Program Files\OpenSSL-Win64\bin"
@@ -119,7 +119,7 @@ python -m http.server 8000 --bind 127.0.0.1
 Sau khi CLI NetRecon đã triển khai, các mốc kiểm tra dự kiến:
 
 ~~~powershell
-cd "C:\Users\LOQ\OneDrive\Desktop\BUOI 3\LAB02"
+cd "C:\Users\LOQ\OneDrive\Desktop\BUOI 3\BUOI3\LAB02"
 python cli.py --target 127.0.0.1 --ports 8000 --mode scan
 python cli.py --target 127.0.0.1 --ports 8000 --mode all
 python app.py
@@ -149,7 +149,7 @@ Không sao chép tài khoản hoặc mật khẩu xuất hiện trong hình minh
 ## 4. Chụp trạng thái Git sau khi push
 
 ~~~powershell
-cd "C:\Users\LOQ\OneDrive\Desktop\BUOI 3"
+cd "C:\Users\LOQ\OneDrive\Desktop\BUOI 3\BUOI3"
 git log -1 --oneline
 git status -sb
 git remote -v
