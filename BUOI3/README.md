@@ -6,11 +6,27 @@ Sinh viên: DUONGTHANHMONG - MSSV: 2387700044
 | Thư mục | Nội dung | Trạng thái |
 |---|---|---|
 | [LAB01](LAB01/README.md) | SecureChat: TLS/mTLS, AES-CBC, chat nhiều client và phòng chat | Đã thực hành; 5 ảnh thật và bộ 16 kiểm tra |
-| [LAB02](LAB02/README.md) | NetRecon: quét cổng, dịch vụ, banner, CLI/web/email | Đã tạo cấu trúc chuẩn bị; chưa triển khai |
+| [LAB02](LAB02/README.md) | NetRecon: quét cổng, dịch vụ, banner, CLI/web/email | Đã thực hành CLI, web và nhận email; có 10 ảnh gốc, 8 ảnh nhúng trong gallery |
 
-- [Hướng dẫn chụp ảnh theo giáo trình](HUONG_DAN_CHUP_ANH.md)
+- [Hướng dẫn chạy và kết quả LAB02](LAB02/README.md)
 - [Ảnh thực hành LAB01](LAB01/image/README.md)
 - [Thư mục ảnh LAB02](LAB02/image/README.md)
+
+## Chạy LAB02
+
+Mã nguồn thực tế nằm trong LAB02/netrecon:
+
+~~~powershell
+cd "C:\Users\LOQ\OneDrive\Desktop\BUOI 3\BUOI3\LAB02\netrecon"
+python -m pip install -r requirements.txt
+python cli.py --help
+python app.py
+~~~
+
+Mở http://localhost:5000/ để dùng giao diện web.
+Xem [README LAB02](LAB02/README.md) để cấu hình email, chạy các chế độ CLI và đối chiếu kết quả.
+Gallery không nhúng hai ảnh tài khoản/cấu hình chưa che thông tin nhạy cảm.
+Mật khẩu ứng dụng đã hiển thị trong ảnh cần được thu hồi và thay mới.
 
 ## Chạy LAB01
 
