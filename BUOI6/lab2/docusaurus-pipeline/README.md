@@ -73,6 +73,10 @@ Phần này bám mục 6.2.2 và các trang 10-15 của `lab-06 (1).pdf`. Giáo 
 
 ![GitHub Pages PDF mapping](images/14-github-pages-pdf-mapping.png)
 
+**GitHub Actions workflow hoàn tất:** ảnh xác nhận workflow `BUOI6 Docusaurus Pages` có trạng thái `Success`, cả `build-docusaurus` và `deploy-pages` đều passed, đồng thời có 2 artifacts.
+
+![GitHub Actions deploy success](images/15-github-actions-deploy-success.png)
+
 ## Kết quả mong đợi
 
 Pipeline đạt khi `build-job` và `pages` đều passed, artifact tồn tại, và URL Pages mở được trang **BUOI6 - DevSecOps**. Nếu runner không có Internet hoặc project không được phép chạy Pages, ghi nhận đúng lỗi GitLab trong README thay vì tự coi pipeline đạt.
