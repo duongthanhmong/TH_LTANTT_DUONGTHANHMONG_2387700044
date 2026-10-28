@@ -1,6 +1,6 @@
-**MSSV:** 2387700044
-**Họ và tên:** Dương Thanh Mộng
-**Lớp:** 23DATA1
+**MSSV:** 2387700044  
+**Họ và tên:** Dương Thanh Mộng  
+**Lớp:** 23DATA1  
 **Bài:** Bài 6 - Thực hành pipeline Docusaurus và GitLab Pages
 
 ---
@@ -55,6 +55,13 @@ Phần này bám mục 6.2.2 và các trang 10-15 của `lab-06 (1).pdf`. Giáo 
 
 ![Local Docusaurus docs - phần pages](images/09-local-docusaurus-docs-pages.png)
 
+**GitHub Actions chạy thành công:** ảnh xác nhận `build-docusaurus` và `deploy-pages` đều passed, workflow có artifact và GitHub Pages đã triển khai.
+
+![GitHub Actions Docusaurus Pages thành công](images/11-github-docusaurus-pages-success.png)
+
+Ảnh tổng hợp danh sách hai workflow GitHub Actions được lưu tại `images/10-github-actions-workflows-success.png`. Sau lần chạy thành công này, `baseUrl` được đặt theo đúng tên repository GitHub để tài nguyên website Pages tải đúng đường dẫn.
+
 ## Kết quả mong đợi
 
 Pipeline đạt khi `build-job` và `pages` đều passed, artifact tồn tại, và URL Pages mở được trang **BUOI6 - DevSecOps**. Nếu runner không có Internet hoặc project không được phép chạy Pages, ghi nhận đúng lỗi GitLab trong README thay vì tự coi pipeline đạt.
+
