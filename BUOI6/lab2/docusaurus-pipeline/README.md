@@ -61,6 +61,18 @@ Phần này bám mục 6.2.2 và các trang 10-15 của `lab-06 (1).pdf`. Giáo 
 
 Ảnh tổng hợp danh sách hai workflow GitHub Actions được lưu tại `images/10-github-actions-workflows-success.png`. Sau lần chạy thành công này, `baseUrl` được đặt theo đúng tên repository GitHub để tài nguyên website Pages tải đúng đường dẫn.
 
+**GitHub Pages live:** ảnh xác nhận website Docusaurus đã mở thành công tại URL repository Pages với trang BUOI6 - DevSecOps.
+
+![GitHub Pages live](images/12-github-pages-live.png)
+
+**GitHub Pages - luồng build và deploy:** ảnh xác nhận nội dung `build-job`, `pages`, `npm run build` và `mv build/ public/` trên website đã triển khai.
+
+![GitHub Pages build and deploy](images/13-github-pages-build-pages.png)
+
+**GitHub Pages - đối chiếu giáo trình:** ảnh xác nhận bảng mapping `image: node`, `build/`, `pages`, `public/` với các trang PDF.
+
+![GitHub Pages PDF mapping](images/14-github-pages-pdf-mapping.png)
+
 ## Kết quả mong đợi
 
 Pipeline đạt khi `build-job` và `pages` đều passed, artifact tồn tại, và URL Pages mở được trang **BUOI6 - DevSecOps**. Nếu runner không có Internet hoặc project không được phép chạy Pages, ghi nhận đúng lỗi GitLab trong README thay vì tự coi pipeline đạt.
